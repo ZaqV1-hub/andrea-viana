@@ -17,6 +17,8 @@
     a:hover { color: oklch(80% 0.1 60); }
     ::selection { background: oklch(35% 0.05 55); color: oklch(97% 0.01 75); }
     html { scroll-behavior: smooth; }
+    @keyframes wa-pulse { 0%, 100% { box-shadow: 0 0 0 0 oklch(74% 0.18 150 / 0.5); } 70% { box-shadow: 0 0 0 16px oklch(74% 0.18 150 / 0); } }
+    @keyframes wa-pop { from { opacity: 0; transform: translateY(20px) scale(0.8); } to { opacity: 1; transform: translateY(0) scale(1); } }
   </style>
 </helmet>
 
@@ -34,7 +36,7 @@
         <p style="font-size: 19px; line-height: 1.6; color: oklch(78% 0.02 65); max-width: 560px; margin: 0 0 36px;">
           Crie vídeos, stories e conteúdo profissional com Inteligência Artificial — mesmo sem câmera, sem edição e sem saber nada de tecnologia. Um treinamento completo, do primeiro vídeo ao feed pronto pra vender.
         </p>
-        <a href="#oferta" style="display: inline-flex; align-items: center; gap: 10px; background: oklch(70% 0.11 55); color: oklch(15% 0.02 50); font-weight: 600; font-size: 17px; padding: 18px 34px; border-radius: 100px; text-decoration: none; box-shadow: 0 12px 30px -10px oklch(70% 0.11 55 / 0.45);">
+        <a href="#oferta" style="display: inline-flex; align-items: center; gap: 10px; background: oklch(70% 0.11 55); color: oklch(15% 0.02 50); font-weight: 600; font-size: 17px; padding: 18px 34px; border-radius: 100px; text-decoration: none; box-shadow: 0 12px 30px -10px oklch(70% 0.11 55 / 0.45); transition: transform .25s cubic-bezier(.34,1.56,.64,1), box-shadow .25s ease, background .25s ease;" style-hover="transform: scale(1.06) translateY(-2px); box-shadow: 0 16px 36px -8px oklch(70% 0.11 55 / 0.6); background: oklch(76% 0.12 55);" style-active="transform: scale(0.97) translateY(0px);">
           Quero Criar Meu Feed com IA
         </a>
         <div style="display: flex; gap: 24px; margin-top: 20px; font-size: 14px; color: oklch(70% 0.02 65); flex-wrap: wrap;">
@@ -68,7 +70,7 @@
       Com o <strong style="color: oklch(94% 0.012 75);">Do Zero ao Feed com IA</strong>, você aprende a criar sua própria assistente digital, gravar vídeos sem aparecer, transformar sua imagem em avatar e ativar mais de 15 assistentes de IA que trabalham por você — do primeiro conteúdo ao feed completo.
     </p>
     <div style="text-align: center; margin-top: 48px;">
-      <a href="#oferta" style="display: inline-flex; align-items: center; gap: 10px; background: oklch(70% 0.11 55); color: oklch(15% 0.02 50); font-weight: 600; font-size: 17px; padding: 18px 34px; border-radius: 100px; text-decoration: none;">
+      <a href="#oferta" style="display: inline-flex; align-items: center; gap: 10px; background: oklch(70% 0.11 55); color: oklch(15% 0.02 50); font-weight: 600; font-size: 17px; padding: 18px 34px; border-radius: 100px; text-decoration: none; transition: transform .25s cubic-bezier(.34,1.56,.64,1), box-shadow .25s ease, background .25s ease; box-shadow: 0 0px 0px -10px oklch(70% 0.11 55 / 0);" style-hover="transform: scale(1.06) translateY(-2px); box-shadow: 0 16px 36px -8px oklch(70% 0.11 55 / 0.55); background: oklch(76% 0.12 55);" style-active="transform: scale(0.97) translateY(0px);">
         Quero Criar Meu Feed com IA
       </a>
     </div>
@@ -173,7 +175,7 @@
         <div style="font-size: 15px; color: oklch(72% 0.02 60);">Valor total: <span style="text-decoration: line-through;">R$ 1.029</span></div>
         <div style="font-family: 'Poppins', sans-serif; font-size: 48px; font-weight: 700; margin: 12px 0; color: oklch(90% 0.06 60);">R$ 597</div>
         <div style="font-size: 14px; color: oklch(72% 0.02 60); margin-bottom: 28px;">à vista ou a prazo</div>
-        <a href="#" style="display: inline-flex; background: oklch(75% 0.11 55); color: oklch(15% 0.02 50); font-weight: 700; font-size: 18px; padding: 20px 44px; border-radius: 100px; text-decoration: none;">Quero Criar Meu Feed com IA</a>
+        <a href="#" style="display: inline-flex; background: oklch(75% 0.11 55); color: oklch(15% 0.02 50); font-weight: 700; font-size: 18px; padding: 20px 44px; border-radius: 100px; text-decoration: none; transition: transform .25s cubic-bezier(.34,1.56,.64,1), box-shadow .25s ease, background .25s ease;" style-hover="transform: scale(1.06) translateY(-2px); box-shadow: 0 16px 36px -8px oklch(75% 0.11 55 / 0.6); background: oklch(80% 0.12 55);" style-active="transform: scale(0.97);">Quero Criar Meu Feed com IA</a>
       </div>
     </div>
   </section>
@@ -231,7 +233,7 @@
       <p style="font-family: 'Poppins', sans-serif; font-style: italic; font-weight: 500; font-size: 24px; line-height: 1.6; margin: 32px 0; color: oklch(90% 0.06 60);">
         Daqui a 30 dias, seu feed pode continuar do mesmo jeito. Ou pode estar cheio de conteúdo, vendendo todos os dias, com uma assistente de IA trabalhando por você.
       </p>
-      <a href="#oferta" style="display: inline-flex; background: oklch(75% 0.11 55); color: oklch(15% 0.02 50); font-weight: 700; font-size: 18px; padding: 20px 44px; border-radius: 100px; text-decoration: none;">Quero Transformar Meu Instagram com IA Agora</a>
+      <a href="#oferta" style="display: inline-flex; background: oklch(75% 0.11 55); color: oklch(15% 0.02 50); font-weight: 700; font-size: 18px; padding: 20px 44px; border-radius: 100px; text-decoration: none; transition: transform .25s cubic-bezier(.34,1.56,.64,1), box-shadow .25s ease, background .25s ease;" style-hover="transform: scale(1.06) translateY(-2px); box-shadow: 0 16px 36px -8px oklch(75% 0.11 55 / 0.6); background: oklch(80% 0.12 55);" style-active="transform: scale(0.97);">Quero Transformar Meu Instagram com IA Agora</a>
     </div>
   </section>
 
@@ -242,6 +244,9 @@
     </p>
   </section>
 
+  <a href="https://api.whatsapp.com/send/?phone=5511994474252&text=Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+os+cursos+e+mentorias.&type=phone_number&app_absent=0" target="_blank" rel="noopener" aria-label="Falar no WhatsApp" style="position: fixed; bottom: 26px; right: 26px; width: 62px; height: 62px; border-radius: 50%; background: oklch(74% 0.18 150); display: flex; align-items: center; justify-content: center; z-index: 40; box-shadow: 0 8px 24px -6px oklch(20% 0.05 150 / 0.5); animation: wa-pop .5s cubic-bezier(.34,1.56,.64,1) .6s backwards, wa-pulse 2.4s ease-out 1.2s infinite; transition: transform .25s cubic-bezier(.34,1.56,.64,1);" style-hover="transform: scale(1.1); animation: wa-pop .01s, none;" style-active="transform: scale(0.95);">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="white"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.47 1.33 4.98L2 22l5.2-1.36a9.94 9.94 0 004.84 1.23h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2zm5.83 14.17c-.25.7-1.24 1.28-2.03 1.45-.54.12-1.24.21-3.6-.77-3.02-1.25-4.96-4.32-5.11-4.52-.15-.2-1.22-1.62-1.22-3.09 0-1.47.77-2.19 1.04-2.49.27-.3.6-.37.8-.37h.58c.18 0 .43-.07.67.51.25.6.86 2.07.93 2.22.07.15.12.33.02.53-.1.2-.15.32-.3.5-.15.18-.31.4-.44.53-.15.15-.3.31-.13.6.17.3.76 1.25 1.63 2.02 1.12 1 2.06 1.31 2.36 1.46.3.15.47.13.65-.08.18-.2.75-.87.95-1.17.2-.3.4-.25.67-.15.28.1 1.76.83 2.06.98.3.15.5.22.57.35.08.13.08.75-.17 1.45z"></path></svg>
+  </a>
 </div>
 
 </x-dc>
